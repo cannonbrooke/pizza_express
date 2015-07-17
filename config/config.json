@@ -6,6 +6,9 @@
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
+  "session": {
+    "secret": "keyboard cat"
+  },
   "test": {
     "username": "root",
     "password": null,

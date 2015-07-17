@@ -1,4 +1,4 @@
-var models = require('../models');
+var models = require('./models');
 
 var User = models.User;
 
@@ -6,6 +6,6 @@ models.sequelize
   .sync({force:true})
   .then(function() {
     return User.create(
-      {username: 'bob', password: 'password'}
+      {username: 'bob', password: 'p@$$word!'}
     );
   });
